@@ -146,20 +146,20 @@ function init(){
 	// ;
 
 //SAM NEW TICK CONFIRM 28/8/2025
-jQuery(document).ready(function($) {
-  $('#collect-form-pickup-location-confirm').change(function() {
+
+  jQuery('#collect-form-pickup-location-confirm').change(function() {
 	jQuery('#collect-form-pickup-location-check').button('option', 'disabled', true)
 	jQuery('#collect-form-pickup-location, #collect-form-pickup-location-search').prop('disabled', true);
 
-    if ($(this).prop('checked')) {
+    if (jQuery(this).prop('checked')) {
       // Grab values
-      var doctorName   = $('#collect-form-doctor-name').val();
-      var surgeryName  = $('#collect-form-surgery-name').val();
-      var phone        = $('#collect-form-surgery-phone').val();
-      var address      = $('#collect-form-surgery-address').val();
-      var city         = $('#collect-form-surgery-city').val();
-      var state        = $('#collect-form-surgery-state').val();
-      var postcode     = $('#collect-form-surgery-postcode').val();
+      var doctorName   = jQuery('#collect-form-doctor-name').val();
+      var surgeryName  = jQuery('#collect-form-surgery-name').val();
+      var phone        = jQuery('#collect-form-surgery-phone').val();
+      var address      = jQuery('#collect-form-surgery-address').val();
+      var city         = jQuery('#collect-form-surgery-city').val();
+      var state        = jQuery('#collect-form-surgery-state').val();
+      var postcode     = jQuery('#collect-form-surgery-postcode').val();
 
       // Build prefill URL for script embed
       var jotformUrl = "https://healius.jotform.com/jsform/252391085621859"
@@ -172,7 +172,7 @@ jQuery(document).ready(function($) {
         + "&surgeryPostcode=" + encodeURIComponent(postcode);
 
       // Clean container
-      $('#jotform-container').empty();
+      jQuery('#jotform-container').empty();
 
       // Override appendChild temporarily
       var container = document.getElementById('jotform-container');
@@ -191,13 +191,13 @@ jQuery(document).ready(function($) {
 
     } else {
       // Remove everything if unchecked
-      $('#jotform-container').empty();
+      jQuery('#jotform-container').empty();
       
 	  jQuery('#collect-form-pickup-location-check').button('option', 'disabled', false)
 		jQuery('#collect-form-pickup-location, #collect-form-pickup-location-search').prop('disabled', false);
     }
   });
-});
+
 
 /*
 	jQuery('#collect-form-required-by-date')
