@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/hlsrepo/qml-courier-jotform@main/Collect.QML.css"
+      href="https://raw.githubusercontent.com/hlsrepo/qml-courier-jotform/refs/heads/main/Collect.QML.css"
     />
 	<script type="text/javascript">
 		function loadScript(url, callback) {
@@ -28,11 +28,11 @@
 
 	if (window.jQuery) {
 		// jQuery is already loaded, directly load the custom script
-		loadScript('https://cdn.jsdelivr.net/gh/hlsrepo/qml-courier-jotform@main/Collect.QML.js');
+		loadScript('https://raw.githubusercontent.com/hlsrepo/qml-courier-jotform/refs/heads/main/Collect.QML.js');
 	} else {
 		// Load jQuery first, then load the custom script
 		loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', function() {
-			loadScript('https://cdn.jsdelivr.net/gh/hlsrepo/qml-courier-jotform@main/Collect.QML.js');
+			loadScript('https://raw.githubusercontent.com/hlsrepo/qml-courier-jotform/refs/heads/main/Collect.QML.js');
 		});
 	}
 	</script>
