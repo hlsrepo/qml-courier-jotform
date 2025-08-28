@@ -148,7 +148,7 @@ function init(){
 //SAM NEW TICK CONFIRM 28/8/2025
 
   jQuery('#collect-form-pickup-location-confirm').change(function() {
-	jQuery('#collect-form-pickup-location-check').button('option', 'disabled', true)
+	jQuery('#collect-form-pickup-location-check').button('option', 'disabled', true);
 	jQuery('#collect-form-pickup-location, #collect-form-pickup-location-search').prop('disabled', true);
 
     if (jQuery(this).prop('checked')) {
