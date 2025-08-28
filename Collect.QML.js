@@ -170,7 +170,7 @@ function init(){
         + "&surgeryAddress=" + encodeURIComponent(address)
         + "&surgeryCity="  + encodeURIComponent(city)
         + "&surgeryState=" + encodeURIComponent(state)
-        + "&surgeryPostcode=" + encodeURIComponent(postcode);
+        + "&surgeryPostcode=" + encodeURIComponent(postcode)
 		+ "&surgeryCode=" + encodeURIComponent(surgeryCode);
 
       // Clean container
