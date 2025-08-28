@@ -160,6 +160,7 @@ function init(){
       var city         = jQuery('#collect-form-surgery-city').val();
       var state        = jQuery('#collect-form-surgery-state').val();
       var postcode     = jQuery('#collect-form-surgery-postcode').val();
+	  var surgeryCode     = jQuery('#collect-form-code').val();
 
       // Build prefill URL for script embed
       var jotformUrl = "https://healius.jotform.com/jsform/252391085621859"
@@ -170,6 +171,7 @@ function init(){
         + "&surgeryCity="  + encodeURIComponent(city)
         + "&surgeryState=" + encodeURIComponent(state)
         + "&surgeryPostcode=" + encodeURIComponent(postcode);
+		+ "&surgeryCode=" + encodeURIComponent(surgeryCode);
 
       // Clean container
       jQuery('#jotform-container').empty();
